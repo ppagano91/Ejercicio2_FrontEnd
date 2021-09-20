@@ -1,0 +1,56 @@
+fieldset {
+  background-color: rgb(255, 51, 0);
+  border: 1px solid black;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+.form {
+  legend {
+    padding: 0 10px;
+    text-align: center;
+  }
+  & {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    font-size: 20px;
+    border: 2px solid black;
+    border-radius: 20px;
+  }
+
+  &__info {
+    display: flex;
+    margin: 5px;
+    gap: 10px;
+
+    &--label {
+      font-size: 16px;
+      font-weight: bold;
+      &--genero {
+        font-weight: normal;
+        font-size: 14px;
+      }
+    }
+
+    &--btn {
+      background-color: rgb(36, 98, 212);
+      border: 1px solid black;
+      color: ivory;
+      border-radius: 5px;
+      margin: 5px;
+      padding: 5px 20px;
+      align-self: center;
+      display: flex;
+      justify-content: center;
+      width: 60px;
+      &:hover {
+        cursor: pointer;
+        background-color: darkgoldenrod;
+        transform: scale(1.1);
+      }
+    }
+  }
+}

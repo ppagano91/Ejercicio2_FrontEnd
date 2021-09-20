@@ -1,0 +1,54 @@
+.header {
+  & {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 25px;
+
+    // SI PONGO EL FIXED CORREGIR EL MARGIN TOP DEL MAIN
+    // position: fixed;
+    width: 100%;
+    background-color: rgb(19, 22, 192);
+  }
+  &__container {
+    background-color: rgb(19, 22, 192);
+  }
+  &__title {
+    display: flex;
+    align-items: center;
+    &__logo {
+      &--img {
+        width: 75px;
+        height: 75px;
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+    &--title {
+      color: rgb(9, 8, 47);
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+  }
+  &__nav {
+    display: flex;
+    align-items: center;
+
+    &--item {
+      text-decoration: none;
+      color: ivory;
+      font-size: large;
+      padding: 0 10px;
+      font-size: 20px;
+      &:hover {
+        border-radius: 15px;
+        background-color: rgb(255, 208, 0);
+        color: rgb(9, 8, 47);
+        transition: background-color 0.2s linear;
+      }
+    }
+  }
+}

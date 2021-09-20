@@ -1,0 +1,111 @@
+.hero {
+  height: 800px;
+  background-image: url("../../images/hero_pokemon2.jpg");
+  background-size: cover;
+
+  //   background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: flex-start;
+
+  &__card {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 20px;
+    gap: 10px;
+    border: 1px solid black;
+    &:hover {
+      background-color: rgb(223, 190, 2);
+    }
+    &--title {
+      font-size: 20px;
+    }
+    &--text {
+      h4 {
+        font-size: 20px;
+        // font-weight: lighter;
+      }
+    }
+    &__buttons {
+      padding: 10px;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      gap: 20px;
+      &--btn {
+        background-color: rgb(18, 66, 224);
+        padding: 10px;
+        border-radius: 20px;
+        color: ivory;
+        text-decoration: none;
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+}
+
+//SECCIÓN CARDS
+.cards {
+  & {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0px;
+  }
+  &__title {
+    h3 {
+      display: flex;
+      width: 350px;
+      background-color: rgba(255, 179, 0, 1);
+      border-radius: 10px;
+      padding: 10px;
+      margin-left: 10px;
+    }
+  }
+  &__container {
+    display: flex;
+    justify-content: center;
+    margin: 10px 20px;
+    gap: 10px;
+  }
+
+  &__card {
+    background-color: rgba(255, 251, 0, 0.5);
+    height: auto;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 20px;
+    gap: 10px;
+
+    &--title {
+      display: flex;
+      justify-content: center;
+      font-size: 25px;
+    }
+    &--images {
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+      &--image {
+        height: 55px;
+        width: auto;
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+    &--text {
+      text-align: justify;
+      font-size: 14px;
+      padding: 10px 0;
+    }
+  }
+}
