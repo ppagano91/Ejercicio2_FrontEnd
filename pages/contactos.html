@@ -36,8 +36,8 @@
     <!--/HEADER  -->
     <main class="main">
       <section class="hero">
-        <fieldset class="fieldset">
-          <form class="form">
+        <fieldset class="form__fieldset">
+          <form class="form" id="form">
             <legend>Suscripción</legend>
             <div class="form__info">
               <label class="form__info--label" for="nombre">Nombre</label>
@@ -95,7 +95,7 @@
                   type="radio"
                   id="genero"
                   name="genero"
-                  value="masc"
+                  value="Masculino"
                   required
                 />
                 <label>Femenino</label>
@@ -103,7 +103,7 @@
                   type="radio"
                   id="genero"
                   name="genero"
-                  value="fem"
+                  value="Femenino"
                   required
                 />
                 <label>Otro</label>
@@ -111,7 +111,7 @@
                   type="radio"
                   id="genero"
                   name="genero"
-                  value="otro"
+                  value="Otro"
                   required
                 />
               </div>
@@ -120,18 +120,36 @@
             <div class="form__info">
               <label class="form__info--label" for="pais">Pais</label>
               <select name="pais" id="pais">
-                <option value="arg">Argentina</option>
-                <option value="ven">Venezuela</option>
-                <option value="col">Colombia</option>
-                <option value="bra">Brasil</option>
-                <option value="bra">Otro</option>
+                <option value="Argentina">Argentina</option>
+                <option value="Venezuela">Venezuela</option>
+                <option value="Colombia">Colombia</option>
+                <option value="Brasil">Brasil</option>
+                <option value="Ecuador">Ecuador</option>
+                <option value="Uruguay">Uruguay</option>
+                <option value="Paraguay">Paraguay</option>
+                <option value="Perú">Perú</option>
+                <option value="Chile">Chile</option>
+                <option value="Otro">Otro</option>
               </select>
             </div>
-            <button id="sendBtn" class="form__info--btn">ENVIAR</button>
+
+            <button type="button" id="sendBtn" class="form__info--btn">
+              ENVIAR
+            </button>
           </form>
         </fieldset>
       </section>
-      <section class="formulario"></section>
+
+      <section class="listado-personas">
+        <fieldset class="listado">
+          <legend class="listado__legend">
+            Lista de personas inscriptas en la Pokémon Web
+          </legend>
+          <div id="listado__container" class="listado__container"></div>
+        </fieldset>
+        <h3>¿CÓMO AGREGAR UNA IMAGEN PROPORCIONADA AL FONDO DE LA LISTA?</h3>
+        <h3>¿CÓMO DESAPARECE LA LISTA HASTA QUE APAREZCAN PERSONAS?</h3>
+      </section>
       <section></section>
     </main>
 

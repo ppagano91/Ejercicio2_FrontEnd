@@ -18,6 +18,7 @@
   &__title {
     display: flex;
     align-items: center;
+
     &__logo {
       &--img {
         width: 75px;
@@ -31,6 +32,7 @@
       color: rgb(9, 8, 47);
       font-weight: 700;
       text-transform: uppercase;
+      color: ivory;
     }
   }
   &__nav {

@@ -12,7 +12,7 @@ main { margin: 0 10px; }
 
 .header__title__logo--img:hover { -webkit-transform: scale(1.1); transform: scale(1.1); }
 
-.header__title--title { color: #09082f; font-weight: 700; text-transform: uppercase; }
+.header__title--title { color: #09082f; font-weight: 700; text-transform: uppercase; color: ivory; }
 
 .header__nav { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
@@ -34,11 +34,11 @@ main { margin: 0 10px; }
 
 .footer__redes__links--logo:hover { -webkit-transform: scale(1.1); transform: scale(1.1); }
 
-fieldset { background-color: #ff3300; border: 1px solid black; border-radius: 10px; margin-top: 20px; }
-
 .form legend { padding: 0 10px; text-align: center; }
 
 .form { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; margin: 20px; padding: 5px; background-color: rgba(0, 0, 0, 0.5); font-weight: bold; font-size: 20px; border: 2px solid black; border-radius: 20px; }
+
+.form__fieldset { background-color: #ff3300; border: 1px solid black; border-radius: 10px; margin-top: 20px; }
 
 .form__info { display: -webkit-box; display: -ms-flexbox; display: flex; margin: 5px; gap: 10px; }
 
@@ -50,11 +50,21 @@ fieldset { background-color: #ff3300; border: 1px solid black; border-radius: 10
 
 .form__info--btn:hover { cursor: pointer; background-color: darkgoldenrod; -webkit-transform: scale(1.1); transform: scale(1.1); }
 
+.listado { margin: 30px; display: -webkit-box; display: -ms-flexbox; display: flex; border-radius: 20px; border: 2px solid black; background-image: url("/images/pokemon_image.jpg"); background-repeat: round; height: 100%; background-size: cover; }
+
+.listado__legend { padding: 0 10px; text-align: center; font-weight: bold; font-size: 20px; background-color: black; color: ivory; }
+
+.listado__container { display: -webkit-box; display: -ms-flexbox; display: flex; margin: 30px; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+
+.listado__container--persona { width: 300px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; gap: 10px; background-color: rgba(79, 94, 136, 0.5); -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; text-align: center; color: ivory; margin: 10px; padding: 10px; border: 2px solid black; border-radius: 20px; }
+
+.listado__container--persona:hover { background-color: rgba(245, 191, 16, 0.8); -webkit-transform: scale(1.1); transform: scale(1.1); color: black; }
+
 .hero { height: 800px; background-image: url("../../images/hero_pokemon2.jpg"); background-size: cover; background-position: center; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; }
 
 .hero__card { background-color: rgba(0, 0, 0, 0.5); display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; margin: 30px; padding: 10px; text-align: center; border-radius: 20px; gap: 10px; border: 1px solid black; }
 
-.hero__card:hover { background-color: #dfbe02; }
+.hero__card:hover { background-color: #dfbe02; -webkit-transition: background-color 0.3s linear; transition: background-color 0.3s linear; }
 
 .hero__card--title { font-size: 20px; }
 
