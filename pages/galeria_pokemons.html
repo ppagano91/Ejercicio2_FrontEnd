@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../index.css" />
     <link rel="shortcut icon" href="../images/favicon_pokemon.png" />
-    <script src="../scripts/scripts.js" defer></script>
+    <script src="../scripts/galeria.js" defer></script>
 
     <title>Contactos</title>
   </head>
@@ -33,8 +33,59 @@
     </div>
     <!--/HEADER  -->
     <main class="main">
-      <section class="hero"></section>
-      <section></section>
+      <section class="hero">
+        <h1 class="hero__title">Bienvenido a Pokemon Finder</h1>
+        <div class="pokemonFinder__container">
+          <div class="pokemonFinder">
+            <h2 class="pokemonFinder__title">
+              ¡Encuentra el Pókemon que buscas!
+            </h2>
+            <form class="pokemonFinder__form" id="pokemonForm">
+              <div class="pokemonFinder__form--container">                
+                <input
+                  class="pokemonFinder__input"
+                  type="text"
+                  id="pokemonInput"
+                  placeholder="Nombre o ID de pokemon..."
+                />
+                <label class="pokemonFinder__label" for="pokemonInput">
+                  <button class="pokemonFinder__btn btn" id="btnBuscar">
+                    <img
+                      src="/images/lupa.png"
+                      alt="Ícono de lupa"
+                      class="imgBtn"
+                    />
+                  </button>
+                </label>
+              </div>
+              <!-- <div class="pokemonFinder__btn--container">
+                <button
+                  type="button"
+                  class="pokemonFinder__btn btn"
+                  id="btnBuscarTodos"
+                  onclick="getPokemonList()"
+                >
+                  Buscar Todos
+                </button>
+              </div> -->
+            </form>
+          </div>
+          <div id="pokemonInfo" class="pokemonFinder__pokemonInfo">
+            <h2>Pokemon Info</h2>
+            <img
+              id="pokemonImg"
+              src="#"
+              height="150"
+              width="150"
+              alt="Pokemon Image"
+            />
+            <h4>ID: <span id="pokemonId">-</span></h4>
+            <h4>Name: <span id="pokemonName">-</span></h4>
+          </div>
+        </div>
+      </section>
+
+      <div id="pokemonList" class="pokemonList"></div>
       <section></section>
     </main>
 

@@ -28,6 +28,7 @@
       text-decoration: none;
       display: flex;
       gap: 15px;
+      filter: grayscale(100%);
       &--logo {
         padding: 5px;
         border-radius: 10px;

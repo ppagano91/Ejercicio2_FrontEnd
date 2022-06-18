@@ -1,0 +1,82 @@
+.hidden {
+  display: none;
+}
+.hero {
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+  }
+}
+.pokemonFinder {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  &__container {
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 2px solid black;
+    align-items: center;
+  }
+  &__pokemonInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    margin: 10px;
+    background-color: rgb(223, 54, 2);
+    color: ivory;
+    gap: 10px;
+    border: 2px solid black;
+    border-radius: 15px;
+    img {
+      border: 1px solid black;
+      width: auto;
+      background-image: url("/images/fondo_pokedex.jpg");
+      background-position: bottom;
+    }
+  }
+  &__title {
+    font-size: 20px;
+  }
+  &__form {
+    &--container {
+      display: flex;
+      gap: 10px;
+    }
+  }
+  &__label {
+  }
+  &__input {
+    border: 1px solid black;
+    border-radius: 10px;
+  }
+  &__btn {
+    & {
+      padding: 5px;
+      background-color: rgb(18, 66, 224);
+      border: 0px solid;
+      border-radius: 10px;
+      color: ivory;
+      &:hover {
+        color: black;
+        border: 1px solid black;
+        background-color: rgb(223, 190, 2);
+        // transition: background-color 0.3s linear;
+        transform: scale(1.05);
+      }
+    }
+    &--container {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 10px;
+    }
+  }
+}
+.imgBtn {
+  width: 20px;
+}
