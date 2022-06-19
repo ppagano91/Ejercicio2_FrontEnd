@@ -220,7 +220,7 @@ main {
   display: flex;
   border-radius: 20px;
   border: 2px solid black;
-  background-image: url("./../../images/pokemon_image.jpg");
+  background-image: url("images/pokemon_image.jpg");
   background-repeat: round;
   height: 100%;
   background-size: cover;
@@ -278,9 +278,7 @@ main {
 
 .hero {
   height: 800px;
-  background-image: url("/../../images/hero_pokemon2.jpg");
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
+  background-image: url("images/hero_pokemon2.jpg");
   background-size: cover;
   background-position: center;
   display: -webkit-box;
