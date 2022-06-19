@@ -278,7 +278,7 @@ main {
 
 .hero {
   height: 800px;
-  background-image: url("../../images/hero_pokemon2.jpg");
+  background-image: url("/../../images/hero_pokemon2.jpg");
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
   background-size: cover;
@@ -500,7 +500,7 @@ main {
 .pokemonFinder__pokemonInfo img {
   border: 1px solid black;
   width: auto;
-  background-image: url("./../../images/fondo_pokedex.jpg");
+  background-image: url("images/fondo_pokedex.jpg");
   background-position: bottom;
 }
 
